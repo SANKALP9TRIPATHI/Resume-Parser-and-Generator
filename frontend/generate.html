@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generate Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Resume Generator</h2>
+    <form id="resumeForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="text" name="email" placeholder="Email" required />
+      <input type="text" name="phone" placeholder="Phone" required />
+<!--      <input type="text" name="linkedin" placeholder="LinkedIn URL" />-->
+<!--      <input type="text" name="github" placeholder="GitHub URL" />-->
+      <textarea name="summary" placeholder="Professional Summary" required></textarea>
+
+      <h3>Education</h3>
+      <textarea name="education" placeholder="Eg: B.Tech in CSE, XYZ University, 2021" required></textarea>
+
+      <h3>Experience</h3>
+      <textarea name="experience" placeholder="Eg: Software Intern at ABC Corp..." required></textarea>
+
+      <h3>Skills</h3>
+      <input type="text" name="skills" placeholder="Eg: Python, HTML, CSS, ML" required />
+
+      <button type="submit" class="btn">Generate PDF</button>
+    </form>
+    <p id="generateStatus"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parse Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Upload Resume to Parse</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" name="resume_file" accept=".pdf" required />
+      <button type="submit" class="btn">Parse Resume</button>
+    </form>
+    <div id="parsedOutput"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
